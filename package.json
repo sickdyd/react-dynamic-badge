@@ -1,0 +1,46 @@
+{
+  "name": "react-dynamic-badge",
+  "version": "1.0.5",
+  "description": "A dynamic badge for React",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "babel ./src --out-dir ./dist -s inline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sickdyd/react-dynamic-badge.git"
+  },
+  "keywords": [
+    "dynamic",
+    "badge",
+    "list",
+    "counter",
+    "badger",
+    "items",
+    "listing",
+    "array"
+  ],
+  "author": "Reale Roberto Josef Antonio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sickdyd/react-dynamic-badge/issues"
+  },
+  "homepage": "https://github.com/sickdyd/react-dynamic-badge#readme",
+  "dependencies": {
+    "resize-observer-polyfill": "^1.5.1"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "react": "^16.11.0"
+  },
+  "files": [
+    "dist/*"
+  ]
+}
