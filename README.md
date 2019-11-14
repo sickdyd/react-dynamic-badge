@@ -54,7 +54,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{ width: "50%", border: "1px dashed" }}>
         <DynamicBadge
             items={[
                 "Item 1",
