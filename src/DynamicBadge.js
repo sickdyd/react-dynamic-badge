@@ -179,7 +179,7 @@ export default function Badger(props) {
         {badgeCounter > 0 ?
             <div className="bdgr-container">
               <div className="bdgr-ellipsis">{ itemsToDisplay }, ...</div>
-              <div className={ props.badgeClass ? props.badgeClass : "bdgr-badge" }>{ badgeCounter }</div>
+              <div className={ props.badgeClass ? props.badgeClass : "bdgr-badge" } title={ props.items.join(", ") }>{ badgeCounter }</div>
             </div>
           :
             <div style={{ width: "100%" }}>{ itemsToDisplay }</div>}
