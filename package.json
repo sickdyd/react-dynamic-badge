@@ -1,6 +1,6 @@
 {
   "name": "react-dynamic-badge",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A dynamic badge for React",
   "main": "dist/index.js",
   "scripts": {

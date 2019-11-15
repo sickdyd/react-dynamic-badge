@@ -4,7 +4,7 @@
  * 
  * @param {Array} props.items Contains an array with all the items to be shown
  * @param {string} [props.badgeClass] If needed, the user can give a custom class to be used to represent the badges, if not provided use default class
- * @param {int} [props.resizeDebounce] Its the value that represents the ms used to debounce the resize event, default 20ms
+ * @param {int} [props.resizeDebounce] Its the value that represents the ms used to debounce the resize event, default 1ms
  * 
  */
 

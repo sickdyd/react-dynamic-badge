@@ -17,10 +17,14 @@ A responsive component that shows a badge if an array of strings overflows the p
 
 #### Technical Documentation
 
-- [Installing](#installing)
-- [Exports](#exports)
-- [DynamicBadge](#dynamic-badge)
-- [DynamicBadge Usage](#dynamic-badge-usage)
+- [React-Dynamic-Badge](#react-dynamic-badge)
+      - [Technical Documentation](#technical-documentation)
+    - [Installing](#installing)
+    - [Exports](#exports)
+  - [`<DynamicBadge>`](#dynamicbadge)
+    - [DynamicBadge Usage](#dynamicbadge-usage)
+      - [`<DynamicBadge>` Props:](#dynamicbadge-props)
+    - [License](#license)
 
 ### Installing
 
@@ -41,7 +45,7 @@ import { DynamicBadge } from 'react-dynamic-badge';
 
 ## `<DynamicBadge>`
 
-A `<DynamicBadge>` element will calculate the width of the parent element and show only the items that can fit. If an item overflows it will be hidden and a badge will be shown. If there is only one item and it overflows ellipsis is used.
+A `<DynamicBadge>` element will calculate the width of the parent element and show only the items that can fit. If an item overflows it will be hidden and a badge will be shown. If there is only one item and it overflows ellipsis is used. The font is inherited from the containing element.
 
 ### DynamicBadge Usage
 
@@ -73,21 +77,11 @@ ReactDOM.render(<App/>, document.body);
 
 #### `<DynamicBadge>` Props:
 
-```js
-
-{
-// The array of items that have to be shown, it accepts
-// an array of strings. This field is required.
-items: array,
-// A custom class to be used for the badge can be passed
-// to the component
-badgeClass: string,
-// The resize event is by default debounced by 10 ms
-// Use this prop to change the default value
-resizeDebounce: int
-}
-
-```
+| Name            | Type             | Required | Default      | Description                                                                                                           |
+|-----------------|------------------|----------|--------------|-----------------------------------------------------------------------------------------------------------------------|
+| items           | array of strings | **yes**  | []           | The items to be displayed.                                                                                            |
+| badgeClass      | string           | no       | "bdgr-badge" | It's possible to use a custom class for the badge.                                                                    |
+| resizeDebounce  | int              | no       | 1            | The debounce value for the resize event in ms. The smaller the value the quicker the badge will be updated on resize. |
 
 ### License
 
