@@ -79,8 +79,10 @@ ReactDOM.render(<App/>, document.body);
 
 | Name            | Type             | Required | Default      | Description                                                                                                           |
 |-----------------|------------------|----------|--------------|-----------------------------------------------------------------------------------------------------------------------|
-| items           | array of strings | **yes**  | []           | The items to be displayed.                                                                                            |
-| badgeClass      | string           | no       | "bdgr-badge" | It's possible to use a custom class for the badge.                                                                    |
+| badgeClass      | string           | no       | "bdg-badge"  | It's possible to use a custom class for the badge.                                                                    |
+| items           | array of strings | **yes**  | []           | The items to be displayed. If not set, it falls back to an empty array (nothing is shown).                            |
+| minWidth        | int              | no       |              | Sets the minimum width for the text to be shown; defaults at 1/2 characters depending on the font and character.      |
+| onlyBadge       | bool             | no       | false        | If set to true it will display only the badge and no text.                                                            |
 | resizeDebounce  | int              | no       | 1            | The debounce value for the resize event in ms. The smaller the value the quicker the badge will be updated on resize. |
 
 ### License

@@ -1,57 +1,58 @@
 /* Class applied on a hidden element used as a ruler to calculate the text length in pixels */
 
-.bdgr-phantom {
+.bdg-phantom {
 
-    position: absolute;
-    visibility: hidden;
-  
-    top: 0px;
-    left: 0px;
-  
-  }
-  
-  /* Used for displaying badges for hidden items */
-  
-  .bdgr-badge {
-  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-  
-    padding: 1px 4px 1px 4px;
-  
-    justify-self: flex-end;
-  
-    background-color: rgb(136, 136, 136);
-    color: white;
-  
-    border-radius: 4px;
-  
-    font-weight: normal;
-    font-size: 0.8rem;
-  }
-  
-  .bdgr-badge:before {
-  
-    content: "+"
-  }
-  
-  /* The div containing the the badge */
-  
-  .bdgr-container {
-  
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  
-  .bdgr-ellipsis {
-  
-    width: 100%;
-  
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
+  position: absolute;
+  visibility: hidden;
+
+  top: 0px;
+  left: 0px;
+
+}
+
+/* Used for displaying badges for hidden items */
+
+.bdg-badge {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+  padding: 1px 4px 1px 4px;
+
+  justify-self: flex-end;
+
+  background-color: rgb(136, 136, 136);
+  color: white;
+
+  border-radius: 4px;
+
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.bdg-badge:before {
+
+  content: "+"
+}
+
+/* The div containing the the badge */
+
+.bdg-container {
+
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bdg-ellipsis {
+
+  width: 100%;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
