@@ -52,6 +52,7 @@ export default function DynamicBadge(props) {
   function getElementFontSize(element) {
 
     let styles = window.getComputedStyle(element);
+
     return styles.fontSize;
   }
 
@@ -172,7 +173,7 @@ export default function DynamicBadge(props) {
       // Set again the badge width for calculations
       badgeWidth = rulerBadge.offsetWidth;
 
-      items.forEach( ()=> {
+      items.forEach( (item, index)=> {
 
         // Set a bool to check if it's the last item
         let isLastItem = ( popItems[ popItems.length - 1 ]  === items[ items.length -1 ] );
@@ -194,8 +195,11 @@ export default function DynamicBadge(props) {
           badgeWidth = rulerBadge.offsetWidth;
         }
 
+        // Here, for testing purposes the props.testRulerSpanWidth is adjusted accordingly if existent, otherwise use the defaul turlerSpan.offestWidth
+        const rulerSpanWidth = props.testRulerSpanWidth ? props.testRulerSpanWidth - (props.testRulerSpanWidth / items.length * index) : rulerSpan.offsetWidth;
+
         // If the text to be shown is larger that the container
-        if ( rulerSpan.offsetWidth > ( containerW - badgeWidth )) {
+        if ( rulerSpanWidth > ( containerW - badgeWidth )) {
 
           // If it's not the last item
           if ( popItems.length > 1 ) {

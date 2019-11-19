@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<DynamicBadge> match snapshot 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      className="bdg-ellipsis"
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+    >
+      Item 0, Item 1, Item 2, Item 3, Item 4, Item 5, Item 6, Item 7, Item 8, Item 9
+    </div>
+  </div>
+</div>
+`;
