@@ -1,5 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
+import shallow from 'react-test-renderer/shallow';
 
 import DynamicBadge from './../../DynamicBadge.js';
 
@@ -24,6 +25,24 @@ beforeEach( ()=> {
 });
 
 describe("<DynamicBadge>", ()=> {
+
+  test('match shallow snapshot', () => {
+
+    const renderer = new shallow();
+
+    renderer.render(
+ 
+      <DynamicBadge 
+        items={ items }
+        testRulerSpanWidth={ 100 }
+      />
+    );
+
+    const result = renderer.getRenderOutput();
+
+    expect(result).toMatchSnapshot();
+
+  });
 
   test('match snapshot', () => {
 
