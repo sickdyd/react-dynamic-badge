@@ -1,3 +1,5 @@
+![travis](https://travis-ci.com/sickdyd/react-dynamic-badge.svg?branch=master)
+
 # React-Dynamic-Badge
 
 ![Alt text](/shot.gif?raw=true "Screenshot")
