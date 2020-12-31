@@ -1,19 +1,16 @@
 /* Class applied on a hidden element used as a ruler to calculate the text length in pixels */
 
 .bdg-phantom {
-
   position: absolute;
   visibility: hidden;
 
   top: 0px;
   left: 0px;
-
 }
 
 /* Used for displaying badges for hidden items */
 
 .bdg-badge {
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,14 +30,12 @@
 }
 
 .bdg-badge:before {
-
-  content: "+"
+  content: '+';
 }
 
 /* The div containing the the badge */
 
 .bdg-container {
-
   border: 1px solid red;
   display: flex;
   align-items: center;
@@ -49,7 +44,6 @@
 }
 
 .bdg-ellipsis {
-
   width: 100%;
 
   overflow: hidden;

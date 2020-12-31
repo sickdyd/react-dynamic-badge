@@ -1,4 +1,3 @@
-import DynamicBadge from './DynamicBadge.js';
+import DynamicBadge from './DynamicBadge.js'
 
-export { DynamicBadge };
-
+export { DynamicBadge }
