@@ -2,7 +2,7 @@
 
 # React-Dynamic-Badge
 
-![Alt text](/shot.gif?raw=true "Screenshot")
+![Screenshot](https://user-images.githubusercontent.com/45290018/103410856-a933be80-4bb0-11eb-9baa-5289b8addc38.gif)
 
 A responsive component that shows a badge if an array of strings overflows the parent element.
 
